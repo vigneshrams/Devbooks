@@ -1,0 +1,82 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" >Brand</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#!/AddItem">Add Item</a></li>
+				<li><a href="#!/ListItems">List Items</a></li>        
+			</ul>
+			<!--
+			<ul class="nav navbar-nav navbar-right">
+				<li><a >Link</a></li>
+				<li class="dropdown">
+					<a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a >Action</a></li>
+						<li><a >Another action</a></li>
+						<li><a >Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a >Separated link</a></li>
+					</ul>
+				</li>
+			</ul>
+			-->
+		</div>
+	</div>
+</nav>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<form>
+				<div class="form-group">
+					<label for="inputBName">BName</label>
+					<input type="text" class="form-control" ng-model="inputBName">
+				</div>
+				<div class="form-group">
+					<label for="inputBDesc">BDesc</label>
+					<input type="text" class="form-control" ng-model="inputBDesc">
+					<p class="help-block">Example block-level help text here.</p>
+				</div>
+				<div class="form-group">
+					<label for="inputBDlink">BDlink</label>
+					<input type="text" class="form-control" ng-model="inputBDlink">
+				</div>
+
+				<div class="form-group">
+					<label for="inputBAName">BAName</label>
+					<input type="text" class="form-control" ng-model="inputBAName">
+				</div>
+				<div class="form-group">
+					<label for="inputBPrice">BPrice</label>
+					<input type="text" class="form-control" ng-model="inputBPrice">
+				</div>
+				<div class="form-group">
+					<label for="inputBPrice">BImage</label>
+					<input type="text" class="form-control" ng-model="inputBImg">
+				</div>
+				<div class="form-group">
+					<label for="inputBCategory">BCategory</label>
+					<input type="text" class="form-control" ng-model="inputBCategory">
+				</div>
+				<div class="form-group">
+					<label for="inputBRating">BRating</label>
+					<input type="text" class="form-control" ng-model="inputBRating">
+				</div>				
+				<button type="submit" ng-click="AddItem()" class="btn btn-success">Submit</button>
+			</form>
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+</div>

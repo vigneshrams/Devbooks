@@ -1,0 +1,50 @@
+<header style="position:fixed;width:100%;top:0;z-index:196">
+    <nav class="navbar navbar-info topNav" style="margin-bottom:0px;">
+        <div class="container-fluid">
+            <div class="navbar-header" style="width:185px;text-align:center;">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="width:100%;color:#FFF">Comapny Name</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--<ul class="nav navbar-nav">
+                    <li><a href="{{ url('/') }}">Home</a></li>
+                </ul>-->
+
+                <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{{ url('/auth/login') }}">Menu1</a></li>
+                        <li><a href="{{ url('/auth/register') }}">Menu2</a></li>									
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container" style="margin-top:65px;">
+    <div class="row">
+        <div class="col-md-4 col-sm-12 hvr-grow book" ng-repeat="list in data">
+            <div class="well">
+                <img ng-src="{{list.image}}" style="width:100%;height:500px"/>
+                <a style="margin-top:10px;">
+                    <h4 class="col-md-6" style="padding:0px;">{{list.authName}}</h4>
+                
+                    <h4 class="col-md-6 text-right"><i class="fa fa-star fa-fw"></i>{{list.rating}}</h4>
+                </a>
+                <h3><b>{{list.name}}</b></h3>
+                <p class="text-muted" style="font-size:13px;"><b>{{list.desc}}</b></p>
+                <div class="btn-group btn-group-justified" >
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-primary"><i class="fa fa-dollar fa-fw"></i>{{list.price}}</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="...">
+                        <a ng-href="{{list.link}}" target="_blank" class="btn btn-success"><i class="fa fa-download fa-fw"></i>Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

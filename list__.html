@@ -1,0 +1,69 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" >Brand</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="#!/AddItem">Add Item</a></li>
+				<li class="active"><a href="#!/ListItems">List Items</a></li>        
+			</ul>
+			<!--
+			<ul class="nav navbar-nav navbar-right">
+				<li><a >Link</a></li>
+				<li class="dropdown">
+					<a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a >Action</a></li>
+						<li><a >Another action</a></li>
+						<li><a >Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a >Separated link</a></li>
+					</ul>
+				</li>
+			</ul>
+			-->
+		</div>
+	</div>
+</nav>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-ofsset-2">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Field 1</th>
+						<th>Field 2</th>
+						<th>Field 3</th>
+						<th>Field 4</th>
+						<th>Field 5</th>
+						<th>Field 6</th>
+						<th>Field 7</th>
+						<th>Field 8</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="list in data">
+						<td>{{list.id}}</td>
+						<td>{{list.name}}</td>
+						<td>{{list.desc}}</td>
+						<td>{{list.authName}}</td>
+						<td>{{list.link}}</td>
+						<td>{{list.price}}</td>
+						<td>{{list.category}}</td>
+						<td>{{list.rating}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

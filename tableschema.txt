@@ -1,0 +1,26 @@
+CREATE TABLE  bapp_list (  
+	book_id SERIAL PRIMARY KEY,
+	book_name varchar(512) NOT NULL ,  
+	book_desc varchar(512) NOT NULL ,
+	book_author varchar(512) NOT NULL ,
+	book_link varchar(512) NOT NULL ,
+	book_price INTEGER NOT NULL ,
+	book_categ varchar(512) NOT NULL ,
+	book_rating INTEGER NOT NULL ,
+	book_img varchar(512) NOT NULL ,
+	book_show INTEGER NOT NULL ,
+	book_delete INTEGER NOT NULL
+);
+
+CREATE TABLE user_details (  
+	user_id SERIAL PRIMARY KEY,  
+	user_name varchar(32) NOT NULL ,  
+	password varchar(32) NOT NULL ,
+	role INTEGER NOT NULL
+);
+
+CREATE TABLE user_token(  
+	user_id INTEGER NOT NULL,  
+	user_token varchar(32) NOT NULL
+	time INTEGER NOT NULL
+);

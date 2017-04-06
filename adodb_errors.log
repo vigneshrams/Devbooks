@@ -1,0 +1,2 @@
+(2017-03-13 23:44:49) odbc error: [22003: ERROR: value "201703113061449" is out of range for type integer;
+Error while executing the query] in EXECUTE("insert into user_token (user_id, user_token, time) values ('1','cb9d2a17e45eff4d2489940cd3edead1','201703113061449');")

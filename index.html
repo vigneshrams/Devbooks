@@ -1,0 +1,88 @@
+<html ng-app="testApp">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+		<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="fa/css/font-awesome.min.css" />
+		<link type="text/css" href="notify/animate.css" rel="stylesheet" />
+		<link rel="stylesheet" href="hover.css" />
+        <style>
+			[data-notify="progressbar"] {
+				margin-bottom: 0px;
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				width: 100%;
+				height: 5px;
+			}
+			.progress-bar {
+				-webkit-transition: none !important;
+				transition: none !important;
+			}
+			.container{
+				margin-top:60px;
+			}
+			@media (min-width: 400px){
+                .book{height:766px}
+            }
+			@media (min-width: 768px){
+                .book{height:766px}
+            }
+            @media (min-width: 992px){
+                .book{height:766px}
+            }
+            @media (min-width: 1200px){
+                .book{
+                    height:710px;margin-bottom:15px;
+                }
+            }	
+            
+			.well{
+				background-color:#E3F6FD;
+                border-color:1px solid #E3F6FD;
+			    padding: 10px 10px;
+            }
+            .col-md-4{
+                position: relative;
+                float: left;
+            }
+            .col-md-4:hover{
+                z-index: 116px;
+            }
+            .topNav{
+				background-color: #026180;
+				background-image: linear-gradient(90deg, #026180 0px, #026180);
+				background-repeat: repeat-x;
+				border: 0 none;
+			}
+            .navbar-collapse > .nav > li a {
+				color:#FFF;
+				font-size:15px;
+			}
+            .nav>li>a:focus, .nav>li>a:hover{
+				color:#23b7e5;
+				background-color: #FFF;
+
+			}
+            body{
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size:15px;
+                background-color: #5A9DB3;
+                
+			}
+			h3, .h3{
+				font-size: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<div ng-view></div>		
+		<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="angular/angular.min.js"></script>
+		<script type="text/javascript" src="angular/angular-route.min.js"></script>	
+		<script type="text/javascript" src="angular/angular-cookies.min.js"></script>
+		<script type="text/javascript" src="notify/bootstrap-notify.min.js"></script>
+		<script type="text/javascript" src="route.js"></script>
+		<script type="text/javascript" src="ctrllers.js"></script>
+	</body>
+</html>
